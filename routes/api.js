@@ -62,6 +62,10 @@ class Issues {
 }
 
 const db = [];
+// Sample issue for test purposes
+const sampleIssue = new Issues('apitest', 'Sample Title', 'Sample Text', 'Dylan', 'Dylan', 'Example Status Text');
+sampleIssue._id = "1";
+db.push(sampleIssue);
 
 module.exports = function (app) {
   app
